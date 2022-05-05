@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.body__color {
+    background-color: rgb(162, 247, 247);
+    background-image: url(../recursos/fondo\ 2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.navegacion {
+    display: flex;
+}
+
+.navegacion__formato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(17, 151, 28, 0.555);
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.nav__lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+li {
+    padding: 10px;
+}
+
+.portada {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.portada__empresa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+}
+.section__titulo{
+    text-align: center;
+    padding: 5px;
+}
+.section__tituloMargin{
+    margin-bottom: 5px;
+    }
+
+.presentacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 100px 20px 100px 20px; */
+}
+
+
+.presentacion__empresa, .presentacion__mision, .presentacion__funciones{
+    display: flex;
+    width: 26.25rem;
+    height: 19rem;
+    box-shadow: 5px 1px 11px 1px rgba(0,0,0,0.5);
+    margin-bottom: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.presentacion__empresa a, .presentacion__mision a, .presentacion__funciones a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.presentacion__empresa {
+    background-image: url(/recursos/empresa2\ \(1\).png);
+}
+
+.presentacion__funciones{
+    background-image: url(/recursos/Consultora.png);
+}
+
+.presentacion__mision{
+    background-image: url(/recursos/mision\ \(5\).png);
+}
+
+.presentacion__titulo{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+}
+
+
+ul {
+    list-style-type: none;
+    }
+
+h1{
+    font-size: 50px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+    background-color: rgb(150, 3, 3);
+    border-top: 2px solid black;
+    
+}
+
+/* 
+.footer__logoSysgea {
+    display: flex;
+}
+
+/* .footer__derechos {
+    display: flex;
+    align-items: center;
+}
+
+.footer__red {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}*/
+    
+.footer__redes{
+    display: flex; 
+    justify-content: flex-end;
+    align-content: flex-end;
+    height: 20%;
+    padding-bottom: 1rem;
+}
+
+.footer__redes--logos {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+} 
+
+.footer_logoPadding {
+    padding: 0.5rem;
+}
+
+
+/* ---------------------QUIENES SOMOS--------------------------*/
+
+.portada__quienesSomos{
+    display: flex;
+}
+
+.portada__historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5% 10% -5% 10%;
+}
+
+.portada__titulo{
+    padding-bottom: 40px;
+}
+
+.profesionales {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: -12%;
+    
+}
+
+.profesionales__titulo {
+    display: flex;
+}
+
+.profesionales__titulo1 {
+   font-size: 25px;
+   text-decoration:underline;
+}
+
+.presentacion__profesionales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15% 10% 20% 10%;
+}
+
+
+.presentacion__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: cornflowerblue;
+    
+}
+
+.presentacion__prof {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.presentacion__damian {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 5px solid black;
+    
+}
+
+.presentacion__nadia {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    border: 5px solid pink;
+
+}
+
+.presentacion__gabriel {
+    display: flex;
+    flex-direction: row;
+    border: 5px solid red;
+}
+
+.foto__style {
+    height: 300px;
+    width: 200px;
+    border-radius: 2px;
+}
+
+
+/* ----------------------SERVICIOS----------------------------*/
+
+.servicios__titulo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 100px 30px 30px 30px;
+    padding-right: 50px;
+  
+}
+
+.serviciosUnificados {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 50%;
+    margin: 2.5% 2.5% 2.5% 2.5%;
+}
+
+
+.button__style {
+    cursor: pointer;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: none;
+}
+
+.button__style:hover {
+    background-color: royalblue;
+
+}
+/*----------------------BLOG----------------------------- */
+
+.grid__conteiner {
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    gap: 20px;
+    grid-template-areas: "titulo titulo titulo titulo"
+                        "uno uno dos dos" 
+                        "uno uno tres tres"
+                        "cuatro cuatro cinco cinco"
+                        "seis seis cinco cinco";
+    padding: 2rem 1rem 2rem 1rem;
+}
+
+.blog__titulo {
+    grid-area: titulo;
+   /*  background-color: blue; */
+    text-align: center;
+}
+
+.bloque__uno{
+    grid-area: uno;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
+    background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.bloque__uno::before{
+    background-color: black;
+}
+
+.bloque__dos{
+    grid-area: dos;
+    background-color: yellowgreen;
+     margin: 20px 20px 20px 20px;
+}
+
+.bloque__tres{
+    grid-area: tres;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url(../recursos/compostaje668x200x80.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin: 20px 20px 20px 20px;
+}
+
+
+.botoncito {
+    border-radius: 3px;
+    border: 2px solid black;
+    color: antiquewhite;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.bloque__cuatro{
+    grid-area: cuatro;
+    background-color: aqua;
+    margin: 20px 20px 20px 20px;
+}
+
+.bloque__cinco{
+    grid-area: cinco;
+    background-color: tomato;
+    margin: 20px 20px 20px 20px;
+}
+
+.bloque__seis{
+    grid-area: seis;
+    background-color: teal;
+    margin: 20px 20px 20px 20px;
+}
+
+/*----------------------CONTACTO--------------------------*/
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    
+    align-content: space-between;
+    padding-bottom: 5%;
+    padding-top: 5%;
+   
+}
+
+.formulario__titulo {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulario__etiqueta {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 5% 5% 5% 5%;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: tomato;
+    
+}
+
+.formulario__div {
+    display: flex;
+    padding: 10px 0px 10px 0px;
+}
+
+.formulario__textareaProp {
+    width: 80%;
+    height: 100px;
+}
+
+.formulario__inputBoton{
+    width: 8100;
+}
+
+input {
+    width: 100%;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 3px solid black;
+}
+
+/* ------MEDIA QUERIES----- */
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .blog__titulo {
+        background-color: darkmagenta;
+    }
+
+    .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "titulo titulo "
+                            "titulo titulo"
+                            "uno uno"                             
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "cinco cinco"
+                            "seis seis";
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+
+ /*    .grid__nav{
+        grid-template-areas: "bloque_uno" 
+                             "bloque_dos";
+    }
+
+    .bloque_dos{
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+}
+
+@media (min-width: 541x) and (max-width: 720px) {
+
+    .blog__titulo {
+    background-color:rgba(209, 45, 4, 0.836);
+    }
+    .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "titulo titulo "
+                            "titulo titulo"
+                            "uno uno"                             
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "cinco cinco"
+                            "seis seis";
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+
+}
+
+/* VAMOS A PROBAR EL NUEVO INDEX CON GRID */
+
+/* 
+.grid__nav{
+    display: grid;
+    grid-template-areas: "bloque_uno bloque_dos";
+    grid-template-rows: 0.5fr;
+}
+
+.bloque_uno {
+    grid-area: bloque_uno;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bloque_dos{
+    grid-area: bloque_dos;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container__footer {
+    display: grid;
+    grid-template-areas: "footer footer footer";
+} */
