@@ -66,14 +66,14 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* margin: 100px 20px 100px 20px; */
+    margin: 100px 20px 100px 20px; 
 }
 
 
 .presentacion__empresa, .presentacion__mision, .presentacion__funciones{
     display: flex;
-    width: 26.25rem;
-    height: 19rem;
+    width: 30rem;
+    height: 25rem;
     box-shadow: 5px 1px 11px 1px rgba(0,0,0,0.5);
     margin-bottom: 5%;
     background-repeat: no-repeat;
@@ -89,6 +89,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-between;
 }
 
 .presentacion__empresa {
@@ -129,6 +130,7 @@ footer {
     border-top: 3px solid black;
     margin-top: 4rem;
     padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .footer_uno{
@@ -136,6 +138,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 .footer_dos{
@@ -264,10 +267,13 @@ footer {
 
 /* ----------------------SERVICIOS----------------------------*/
 
+.main__servicios{
+    display: flex;
+    flex-direction: column;
+}
 .servicios__titulo{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -288,7 +294,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    max-width: 50%;
+    max-width: 25rem;
     margin: 2.5% 2.5% 2.5% 2.5%;
 }
 
@@ -452,13 +458,18 @@ input {
 
 @media (min-width: 320px) and (max-width: 540px) {
 
+    .navegacion__formato {
+        display: flex;
+        flex-direction: column;
+    }
+
     .blog__titulo {
         background-color: darkmagenta;
     }
 
     .grid__conteiner {
         gap: 20px;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
         grid-template-areas: "titulo titulo "
                             "titulo titulo"
                             "uno uno"                             
@@ -470,18 +481,38 @@ input {
                             "cinco cinco"
                             "seis seis";
         padding: 2rem 1rem 2rem 1rem;
+        text-align: center;
     }
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno"
-                            "footer_dos" 
-                            "footer_tres";
+
+    .presentacion__empresa, .presentacion__mision, .presentacion__funciones{
+        display: flex;
+        width: 25rem;
+        height: 18rem;
         
     }
 
+    .servicios{
+        display: flex; 
+        flex-direction:column;
+        justify-content: center;
+
+    }
+
+    
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        height: 15rem;
+
+    }
 }
 
+
 @media (min-width: 541x) and (max-width: 720px) {
+
+  
 
     .blog__titulo {
     background-color:rgba(209, 45, 4, 0.836);
@@ -504,10 +535,13 @@ input {
     
     footer {
         display: grid;
-        grid-template-areas: "footer_uno"
-                            "footer_dos" 
-                            "footer_tres";
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
         
+        grid-template-rows: 1.5rem;
+        height: 15rem;
+
     }
     
 
