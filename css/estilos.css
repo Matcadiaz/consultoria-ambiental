@@ -120,45 +120,47 @@ h1{
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 175px;
-    background-color: rgb(150, 3, 3);
-    border-top: 2px solid black;
-    
+    display: grid;
+    grid-template-areas: "footer_uno footer_dos footer_tres";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr;
+    height: 8rem;
+    background-color: rgba(255, 0, 0, 0.808);
+    border-top: 3px solid black;
+    margin-top: 4rem;
+    padding-bottom: 1rem;
 }
 
-/* 
-.footer__logoSysgea {
-    display: flex;
-}
-
-/* .footer__derechos {
+.footer_uno{
+    grid-area: footer_uno;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.footer__red {
+.footer_dos{
+    grid-area: footer_dos;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_tres{
+    grid-area: footer_tres;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}*/
+    align-items: center;
     
+}
 .footer__redes{
-    display: flex; 
-    justify-content: flex-end;
-    align-content: flex-end;
-    height: 20%;
+    text-align: center;
+    padding-top: 1.2rem;
     padding-bottom: 1rem;
 }
 
 .footer__redes--logos {
-    display: flex;
-    align-self: center;
+    display: flex; 
     justify-content: center;
 } 
 
@@ -456,7 +458,7 @@ input {
 
     .grid__conteiner {
         gap: 20px;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
         grid-template-areas: "titulo titulo "
                             "titulo titulo"
                             "uno uno"                             
@@ -469,17 +471,14 @@ input {
                             "seis seis";
         padding: 2rem 1rem 2rem 1rem;
     }
-
-
- /*    .grid__nav{
-        grid-template-areas: "bloque_uno" 
-                             "bloque_dos";
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno"
+                            "footer_dos" 
+                            "footer_tres";
+        
     }
 
-    .bloque_dos{
-        flex-direction: column;
-        flex-wrap: wrap;
-    } */
 }
 
 @media (min-width: 541x) and (max-width: 720px) {
@@ -502,33 +501,18 @@ input {
                             "seis seis";
         padding: 2rem 1rem 2rem 1rem;
     }
+    
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno"
+                            "footer_dos" 
+                            "footer_tres";
+        
+    }
+    
 
 
 }
 
-/* VAMOS A PROBAR EL NUEVO INDEX CON GRID */
 
-/* 
-.grid__nav{
-    display: grid;
-    grid-template-areas: "bloque_uno bloque_dos";
-    grid-template-rows: 0.5fr;
-}
 
-.bloque_uno {
-    grid-area: bloque_uno;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.bloque_dos{
-    grid-area: bloque_dos;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.container__footer {
-    display: grid;
-    grid-template-areas: "footer footer footer";
-} */
