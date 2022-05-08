@@ -29,6 +29,11 @@
     
 }
 
+.navegacion__hover:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.05);
+}
+
 .nav__lista {
     display: flex;
     flex-wrap: wrap;
@@ -350,12 +355,20 @@ footer {
 
 .bloque__uno::before{
     background-color: black;
+   ;
 }
 
 .bloque__dos{
     grid-area: dos;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     background-color: yellowgreen;
-     margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    background-image: url(../recursos/cultivo-de-algas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .bloque__tres{
