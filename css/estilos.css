@@ -181,13 +181,15 @@ footer {
 
 .portada__quienesSomos{
     display: flex;
+    height: 300px;
 }
 
 .portada__historia{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
     margin: 5% 10% -5% 10%;
 }
 
@@ -197,7 +199,7 @@ footer {
 
 .profesionales {
     display: flex;
-    justify-content: center;
+  
     margin-top: 10%;
     margin-bottom: -12%;
     
@@ -205,6 +207,7 @@ footer {
 
 .profesionales__titulo {
     display: flex;
+    font-size: 5rem;
 }
 
 .profesionales__titulo1 {
@@ -217,33 +220,42 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 15% 10% 20% 10%;
+   
 }
 
 
 .presentacion__img {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: cornflowerblue;
     
 }
 
-.presentacion__prof {
+.presentacion__img--Damian{
+    background-image: url(../recursos/Damian.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+.presentacion__prof, h3 {
     display: flex;
     flex-direction: column;
     line-height: 40px;
     text-align: center;
     justify-content: center;
     text-align: center;
+    font-size: 2rem;
+  
 
 }
 
 .presentacion__damian {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     border: 5px solid black;
+    max-width: 500px;
     
 }
 
@@ -269,6 +281,82 @@ footer {
     border-radius: 2px;
 }
 
+.grid__profesionales{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "historia historia"
+                        "titulo titulo"
+                        "damian texto_damian"
+                        "damian texto_damian"
+                        "texto_nadia nadia"
+                        "texto_nadia nadia"
+                        "gabriel texto_gabriel"
+                        "gabriel texto_gabriel";
+    gap: 20px;
+    padding: 5rem 5rem 5rem 5rem;
+}
+
+.historia{
+    grid-area: historia;
+    text-align: center;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.damian{
+    grid-area: damian;
+    background-image: url(../recursos/Damian.png);
+    
+
+}
+
+.texto_damian{
+    grid-area: texto_damian;
+}
+
+.nadia{
+    grid-area: nadia;
+    background-image: url(../recursos/Nadia.png);
+
+}
+
+.texto_nadia{
+    grid-area: texto_nadia;
+}
+
+.gabriel{
+    grid-area: gabriel;
+    background-image: url(../recursos/Gabirel.png);
+    max-width: 100%;
+
+}
+
+.texto_gabriel{
+    grid-area: texto_gabriel;
+    
+}
+
+.damian, .nadia, .gabriel {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 100%;
+    height: 300px;
+}
+
+.texto_damian, .texto_gabriel, .texto_nadia {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
 
 /* ----------------------SERVICIOS----------------------------*/
 
@@ -509,6 +597,11 @@ input {
         flex-direction:column;
         justify-content: center;
 
+    }
+
+    .portada__quienesSomos{
+        display: flex;
+       
     }
 
     
