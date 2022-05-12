@@ -132,12 +132,12 @@ footer {
     grid-template-areas: "footer_uno footer_dos footer_tres";
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.5fr;
-    height: 8rem;
+    height: 100%;
     background-color: rgba(255, 0, 0, 0.808);
     border-top: 3px solid black;
-    margin-top: 4rem;
+  /*   margin-top: 4rem;
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 1rem; */
 }
 
 .footer_uno{
@@ -612,7 +612,7 @@ input {
         grid-template-areas: "footer_uno footer_uno footer_uno"
                             "footer_dos footer_dos footer_dos" 
                             "footer_tres footer_tres footer_tres";
-        height: 15rem;
+        height: 100%;
 
     }
 }
@@ -648,7 +648,7 @@ input {
                             "footer_tres footer_tres footer_tres";
         
         grid-template-rows: 1.5rem;
-        height: 15rem;
+        height: 100%;
 
     }
     

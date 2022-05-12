@@ -17,8 +17,47 @@
 
 <body class="body__color">
 
-    <!-- Nuestra navegacion -->
+    <!-- BOOTSTRAP NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="recursos/sysgeaSinFondo.png" alt="" width="50" height="40" class="d-inline-block align-text-top">
+            </a>
+          <a class="navbar-brand" href="#">QUIENES SOMOS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">SERVICIOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTOS</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
 
+
+    <!-- NAVBAR-->
+<!-- 
     <header class="navegacion ">
         <nav class="navegacion__formato">
             <a href="index.html"><img class="navegacion__hover" src="recursos/sysgeaSinFondo.png" alt="Logo de SYSGEA"></a> 
@@ -31,54 +70,101 @@
             </ul>
         </nav>
     </header>
+ -->
 
-<!-- Portada de la página -->
-    <main class="portada">
-        <section class="portada__empresa">
-            <div class="section__titulo">
-                <h1 class="section__tituloMargin">SYSGEA</h1>
-                <p>Consultora Ambiental</p>
-            </div>
-            <div> <!-- imagen de fondo de esta seccion, pero no va a ser la definitiva -->
-                <!--<img src="recursos/ambiente_2.com.jpg" alt="ambiente" >-->
-            </div> 
-         </section>
+    <!-- CARRUSEL -->
 
-<!-- Presentación rapida de la empresa, objetivos y funciones -->
+    <section class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="recursos/empresa2 (1).png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>La empresa</h5>
+                  <p>Conocé a los profesionales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="recursos/Consultora.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="recursos/mision (5).png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
 
-        <section class="presentacion">
-            <div class="presentacion__empresa">
-                <a href="paginas/quienes-somos.html">
-                    <div>
-                        <h2 class="presentacion__titulo">La Empresa</h2>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dicta, error dolore fugit expedita similique asperiores praesentium temporibus excepturi totam aliquid accusamus dolores iste cumque magnam animi? Vitae, dignissimos est!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="presentacion__mision">
-                <a href="paginas/Blog.html">
-                    <div>
-                        <h2 class="presentacion__titulo">Nuestra mision</h2>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, architecto reiciendis exercitationem, vitae atque rem deserunt repudiandae iste laudantium, consectetur tempore minus. Rem mollitia quo explicabo aliquid nihil, earum fugit!</p>
-                    </div>
-                </a>
-            </div>
-            <div class="presentacion__funciones">
-                <a href="paginas/servicios.html">
-                    <div>
-                        <h2 class="presentacion__titulo">Consultora Ambiental</h2>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iure placeat? Rerum eum pariatur molestiae excepturi autem error fuga vel magni molestias repellendus. Illo voluptate odio dolorum, nam natus iste?</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+<!-- FOOTER BOOTSTRAP -->
+
+<div class="container">
+    <footer class="row row-cols-5 py-5 my-5 border-top">
+      <div class="col">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <p class="text-muted">© 2021</p>
+      </div>
+  
+      <div class="col">
+  
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+  
+      <div class="col">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
     <footer>
         <div class="footer_uno"> 
             <img src="recursos/sysgeaFooter.png" alt="logotipo de SYSGEA">
