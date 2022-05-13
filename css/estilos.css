@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .body__color {
-    background-image: url(../recursos/fondo\ 2.jpg); 
+   /*  background-image: url(../recursos/fondo\ 2.jpg);  */
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -48,6 +48,10 @@ a {
 li {
     padding: 10px;
     
+}
+
+.nav__color{
+    background-color: rgb(177, 14, 14);
 }
 
 .portada {
@@ -183,7 +187,8 @@ footer {
 
 .portada__quienesSomos{
     display: flex;
-    height: 300px;
+    /* height: 300px; */
+    margin-bottom: 100px;
 }
 
 .portada__historia{
@@ -358,6 +363,11 @@ footer {
     display: flex;
     align-items: center;
     line-height: 20px;
+}
+
+.card__type{
+    margin: 20px;
+    /* border: 2px solid black; */
 }
 
 /* ----------------------SERVICIOS----------------------------*/

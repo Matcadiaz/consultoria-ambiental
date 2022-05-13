@@ -15,6 +15,46 @@
     <title>Quienes somos</title>
 </head>
 <body class="body__color">
+    
+    <!-- BOOTSTRAP NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light nav__color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="recursos/sysgeaSinFondo.png" alt="" width="45" height="45" class="d-inline-block align-text-top">
+            </a>
+          <a class="navbar-brand" href="#">SYSGEA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../paginas/quienes-somos.html">QUIENES SOMOS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="../paginas/servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICIOS
+                </a>
+                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/Blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/contacto.html">CONTACTOS</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- 
     <main>
         <header class="navegacion">
             <nav class="navegacion__formato">
@@ -28,7 +68,8 @@
                 </ul>
             </nav>
         </header>
-    </main>
+    </main> -->
+
         <section class="portada__quienesSomos">
             <div class="portada__historia">
                 <h1 class="portada__titulo">Nuestra historia</h1>
@@ -39,17 +80,51 @@
             </div>
         </section>
         
-        <section class="profesionales">
+
+        
+    <!-- CARD GROUP BOOTSTRAP -->
+
+    <div class="card-group card__type">
+        <div class="card ">
+          <img src="../recursos/GabirelR.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">"SYSGEA PLANTEA RESOLVER DE MANERA INTEGRAL LAS TEMATICAS AMBIENTALES. PARA ELLO NOS CAPACITAMOS DIA A DIA CON EL FIN DE PODER BRINDAR EL MEJOR SERVICIO DE MANERA RESPONSABLE Y EFICIENTE.
+                TODOS TENEMOS EL DERECHO A GOZAR DE UN AMBIENTE SANO Y PODER SATISFACER LAS NECESIDADES DE LAS GENERACIONES PRESENTES SIN PERJUDICAR A LAS FUTURAS. NO SE NECESITAN ECOLOGISTAS PERFECTOS, SE NECESITAN VARIOS QUE SE ANIMEN A DAR UN PASO A LA VEZ"</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card ">
+          <img src="../recursos/DamianR.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="../recursos/DamianR.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">"LOS SERVICIOS QUE BRINDA SYSGEA SE LLEVAN A CABO BAJO EL ENFOQUE SUSTENTABLE E INTEGRAL DENTRO DEL MARCO DE LAS NORMATIVAS VIGENTES. ESTO NOS PERMITE DEMOSTRAR QUE NUESTROS VALORES SE COMPROMENTEN DIA A DIA CON EL MEDIOAMBIENTE"</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profesionales SYSGEA -->
+
+        <!-- <section class="profesionales">
             <div class="profesionales__titulo">
                 <h2 class="profesionales__titulo1">Profesionales</h2>
             </div>
-        </section>
+        </section> -->
         
-        <section class="presentacion__profesionales">
+        <!-- <section class="presentacion__profesionales">
             <div class="presentacion__damian">
                 <div class="presentacion__img--Damian">
-                    <!-- <img class="foto__style" src="../recursos/Damian.png" alt="Damian Basualdo"> -->
-                </div>
+                    <img class="foto__style" src="../recursos/Damian.png" alt="Damian Basualdo">
+                 </div>
                 <div class="presentacion__prof">
                     <h3>Basualdo Damian</h3>
                     <p class=>
@@ -81,7 +156,7 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section>  -->
         <footer>
             <div class="footer_uno"> 
                 <img src="../recursos/sysgeaFooter.png" alt="logotipo de SYSGEA">
