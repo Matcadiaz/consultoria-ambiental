@@ -15,10 +15,10 @@
     <title class="centrar">SYSGEA</title>
 </head>
 
-<body class="body__color">
+<body class="body__color bg-light bg-gradient">
 
     <!-- BOOTSTRAP NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light nav__color">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient" style="height: 75px;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="recursos/sysgeaSinFondo.png" alt="" width="45" height="45" class="d-inline-block align-text-top">
@@ -27,20 +27,15 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav justify-content-end">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-end">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="paginas/quienes-somos.html">QUIENES SOMOS</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="/paginas/servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/servicios.html">
                   SERVICIOS
                 </a>
-                <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="paginas/Blog.html">BLOG</a>
@@ -53,24 +48,6 @@
           </div>
         </div>
       </nav>
-
-    
-
-    <!-- NAVBAR-->
-<!-- 
-    <header class="navegacion ">
-        <nav class="navegacion__formato">
-            <a href="index.html"><img class="navegacion__hover" src="recursos/sysgeaSinFondo.png" alt="Logo de SYSGEA"></a> 
-            <ul class="nav__lista">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="paginas/quienes-somos.html">Quienes somos</a></li>
-                <li><a href="paginas/servicios.html">Servicios</a></li>
-                <li><a href="paginas/Blog.html">Blog</a></li>
-                <li><a href="paginas/contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-    </header>
- -->
 
     <!-- CARRUSEL -->
 
@@ -85,22 +62,22 @@
               <div class="carousel-item active">
                 <img src="recursos/empresa2 (1).png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>La empresa</h5>
-                  <p>Conocé a los profesionales</p>
+                  <h5 class="fs-1">La empresa</h5>
+                  <p class="fs-4">Conocé a nuestros profesionales.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <a href="/paginas/quienes-somos.html"><img src="recursos/Consultora.png" class="d-block w-100" alt="..."></a>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5 class="fs-1">NUESTROS SERVICIOS</h5>
+                  <p class="fs-4">Algunos de los servicios que brinda la empresa.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="recursos/mision (5).png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5 class="fs-1">NOTICIAS</h5>
+                  <p class="fs-4">Entrá y enterate todo sobre temáticas ambientales.</p>
                 </div>
               </div>
             </div>
@@ -115,12 +92,11 @@
           </div>
     </section>
 
-<!-- FOOTER BOOTSTRAP -->
-
-
-    <footer>
+    <footer class="bg-primary bg-gradient">
         <div class="footer_uno"> 
-            <img src="recursos/sysgeaFooter.png" alt="logotipo de SYSGEA">
+          <a href="../index.html">
+            <img src="../recursos/sysgeaSinFondo.png" alt="logotipo de SYSGEA">
+          </a>
         </div>
         <div class="footer_dos">
             <p>SYSGEA Consultora Ambiental 2022 | ©Todos los Derechos Reservados</p> 
@@ -142,6 +118,7 @@
             </div>
         </section>   
     </footer> 
+
 <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
