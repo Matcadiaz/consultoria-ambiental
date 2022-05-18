@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 .body__color {
-    background-image: url(/recursos/naturaleza.png);
+    background-image: url(../recursos/naturaleza.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
