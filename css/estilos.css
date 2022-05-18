@@ -16,137 +16,33 @@
     
 }
 
-
-.navegacion {
-    display: flex;
-}
-
-.navegacion__formato {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: rgba(7, 8, 3, 0.966);
-    width: 100%;
-    padding: 5px;
-  
-    
-}
-
 .navegacion__hover:hover{
     transition-duration: 0.4s;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-.nav__lista{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-a {
+ul li a {
     text-decoration: none;
-    color: rgb(248, 248, 248);
-   
+    background-image: linear-gradient(blue, blue);
+    background-position: 0% 80%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .1s;
+}
+a:hover, a:focus {
+    background-size: 100% 2px;
+    transition: 0.4s;
 }
 
 li {
-    padding: 10px;
-    
+    padding: 10px;   
 }
 
-.nav__color{
-    background-color: rgb(177, 14, 14);
-}
-
-
-.portada {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.portada__empresa {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;   
-}
-
-
-/* .carousel-item, .carousel-inner, .carousel-inner img{ 
+.carousel-item, .carousel-inner, .carousel-inner img{ 
     height: 80vh;
-} */
-   
-.carousel-item{
-    height: 80vh;
-    min-height: 40vh;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    object-fit: cover;
 }
 
-
-.section__titulo{
-    text-align: center;
-    padding: 5px;
-}
-.section__tituloMargin{
-    margin-bottom: 5px;
-    }
-
-.presentacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 100px 20px 100px 20px; 
-}
-
-
-.presentacion__empresa, .presentacion__mision, .presentacion__funciones{
-    display: flex;
-    width: 30rem;
-    height: 25rem;
-    box-shadow: 5px 1px 11px 1px rgba(0,0,0,0.5);
-    margin-bottom: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.presentacion__empresa a, .presentacion__mision a, .presentacion__funciones a{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-between;
-}
-
-.presentacion__empresa {
-    background-image: url(/recursos/empresa2\ \(1\).png);
-}
-
-.presentacion__funciones{
-    background-image: url(/recursos/Consultora.png);
-}
-
-.presentacion__mision{
-    background-image: url(/recursos/mision\ \(5\).png);
-}
-
-.presentacion__titulo{
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    color: blue;
-}
-
-
-ul {
-    list-style-type: none;
-    }
 
 h1{
     font-size: 50px;
@@ -162,9 +58,6 @@ footer {
     margin-top: auto;
     background-color: rgba(255, 0, 0, 0.808);
     border-top: 3px solid black;
-  /*   margin-top: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem; */
 }
 
 .footer_uno{
@@ -209,41 +102,15 @@ footer {
 
 /* ---------------------QUIENES SOMOS--------------------------*/
 
-/* .portada__quienesSomos{
-    display: flex;
-    height: 300px;
-   
-}*/
-
-.portada__historia{
-    display: flex;
-   
-    line-height: 2rem;
-    margin: 5% 10% -5% 10%;
-}
-
-/*.portada__titulo{
-    padding-bottom: 40px;
-}*/
- 
+ .card__background--presentacion{
+     background-color: rgba(11, 156, 67, 0.726);
+ }
 
 
-.foto__style {
-    height: 300px;
-    width: 200px;
-    border-radius: 2px;
-}
 
-.card__type{
-    margin: 20px;
-    /* border: 2px solid black; */
-}
 
 .card-deck {
-
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    margin: 0px;
+    margin: 0 auto;
 }
 
 /* ----------------------SERVICIOS----------------------------*/
@@ -270,6 +137,7 @@ footer {
   
 }
 
+
 .serviciosUnificados {
     display:flex;
     flex-direction: column;
@@ -277,6 +145,7 @@ footer {
     text-align: center;
     max-width: 25rem;
     margin: 2.5% 2.5% 2.5% 2.5%;
+    object-fit: cover;
 }
 
 
@@ -309,7 +178,6 @@ footer {
 
 .blog__titulo {
     grid-area: titulo;
-   /*  background-color: blue; */
     text-align: center;
 }
 
@@ -322,17 +190,12 @@ footer {
     background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    text-decoration: underline;
     padding-bottom: 5px;
-    cursor: pointer;
     margin: 20px 20px 20px 20px;
 
 }
 
-.bloque__uno::before{
-    background-color: black;
-   ;
-}
+
 
 .bloque__dos{
     grid-area: dos;
@@ -356,16 +219,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 5px;
-    cursor: pointer;
-    margin: 20px 20px 20px 20px;
-}
-
-
-.botoncito {
-    border-radius: 3px;
-    border: 2px solid black;
-    color: antiquewhite;
-    font-size: 20px;
     margin: 20px 20px 20px 20px;
 }
 
@@ -387,77 +240,27 @@ footer {
     margin: 20px 20px 20px 20px;
 }
 
+.grid__conteiner a, p {
+    text-decoration: none;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+
+   
+
+
 /*----------------------CONTACTO--------------------------*/
 
-.conteiner {
-    min-height: calc(100vh - 75px -200px)
+.card__background {
+   background-color: rgba(188, 231, 245, 0.582);
 }
 
-.formulario__main {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
-    
-   
-}
-
-.formulario__titulo {
-    display: flex;
-    
-    
-}
-
-.formulario__etiqueta {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-
-    width: 80%;
-   /*  padding: 5% 5% 5% 5%;
-    border: 3px solid black;
-    border-radius: 5px;
-    background-color: tomato; */
-    
-}
-
-.formulario__div {
-    display: flex;
-    padding: 10px 0px 10px 0px;
-}
-
-
-
-.formulario__inputBoton{
-    width: 100;
-}
-
-input {
-    width: 100%;
-}
-
-.mapa {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    border: 3px solid black;
-}
 
 /* ------MEDIA QUERIES----- */
 
-@media (min-width: 320px) and (max-width: 540px) {
-
-    .navegacion__formato {
-        display: flex;
-        flex-direction: column;
-    }
+@media screen and (min-width: 320px) and (max-width: 540px) {
 
     .blog__titulo {
         background-color: darkmagenta;
@@ -480,12 +283,7 @@ input {
         text-align: center;
     }
 
-    .presentacion__empresa, .presentacion__mision, .presentacion__funciones{
-        display: flex;
-        width: 25rem;
-        height: 18rem;
-        
-    }
+ 
 
     .servicios{
         display: flex; 
@@ -511,13 +309,9 @@ input {
 }
 
 
-@media (min-width: 541x) and (max-width: 720px) {
+@media screen and (min-width: 541x) and (max-width: 720px) {
 
-  
 
-    .blog__titulo {
-    background-color:rgba(209, 45, 4, 0.836);
-    }
 
     .grid__conteiner {
         gap: 20px;
@@ -534,6 +328,8 @@ input {
                             "seis seis";
         padding: 2rem 1rem 2rem 1rem;
     }
+
+
 
     .card-deck{
         display: flex;
