@@ -107,8 +107,6 @@ footer {
  }
 
 
-
-
 .card-deck {
     margin: 0 auto;
 }
@@ -240,9 +238,9 @@ footer {
     margin: 20px 20px 20px 20px;
 }
 
-.grid__conteiner a, p {
+.grid__conteiner a {
     text-decoration: none;
-    font-size: xx-large;
+    font-size: large;
     text-align: center;
 }
 
@@ -329,13 +327,6 @@ footer {
         padding: 2rem 1rem 2rem 1rem;
     }
 
-
-
-    .card-deck{
-        display: flex;
-        flex-flow: row wrap;
-
-    }
     
     footer {
         display: grid;
