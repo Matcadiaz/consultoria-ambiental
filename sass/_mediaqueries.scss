@@ -1,0 +1,94 @@
+/* ------MEDIA QUERIES----- */
+    
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    
+    .blog__titulo {
+        background-color: darkmagenta;
+    }
+
+    .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+        grid-template-areas: "titulo titulo "
+                            "titulo titulo"
+                            "uno uno"                             
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "cinco cinco"
+                            "seis seis";
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+
+ 
+
+    .servicios{
+        display: flex; 
+        flex-direction:column;
+        justify-content: center;
+
+    }
+
+    .portada__quienesSomos{
+        display: flex;
+       
+    }
+
+    
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        height: 100%;
+
+    }
+}
+
+
+@media screen and (min-width: 541x) and (max-width: 720px) {
+
+
+
+    .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-areas: "titulo titulo "
+                            "titulo titulo"
+                            "uno uno"                             
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "cinco cinco"
+                            "seis seis";
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
+    
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        
+        grid-template-rows: 1.5rem;
+        height: 100%;
+
+    }
+    
+
+
+}
+
+@media screen and (max-width 1700px) {
+    
+    .carousel-item, .carousel-inner, .carousel-inner img{ 
+        height: 100vh;
+        object-fit: cover;
+    }
+}
