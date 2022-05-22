@@ -12,6 +12,7 @@
  
 body {
     
+  
     background-image: url(../recursos/naturaleza.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,11 +71,6 @@ body {
     }
     
 
-
-    
-    
-    
-    
     /* ---------------------QUIENES SOMOS--------------------------*/
     
      .card__background--presentacion{
@@ -138,14 +134,14 @@ body {
         }
     }
 
-    .img{
+    .img {
 
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 400px;
         border-radius: 5px;
-        box-shadow: 19px 19px 39px -13px rgba(0,0,0,0.75); ;
+        box-shadow: 19px 19px 39px -13px rgba(0,0,0,0.75); 
         
         &__EIA{
             background-image: url(../recursos/EIA.jpg);
@@ -180,13 +176,17 @@ body {
     
     .grid__conteiner {
         display: grid;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
         gap: 20px;
         grid-template-areas: "titulo titulo titulo titulo"
                             "uno uno dos dos" 
                             "uno uno tres tres"
                             "cuatro cuatro cinco cinco"
-                            "seis seis cinco cinco";
+                            "cuatro cuatro cinco cinco"
+                            "seis seis siete siete"
+                            "seis seis siete siete";
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 2rem 1rem 2rem 1rem;
     }
     
@@ -196,76 +196,76 @@ body {
     }
     
 
-    .bloque__uno{
-        grid-area: uno;
-        background-color: red;
+    .bloque {
+
         display: flex;
         align-items: flex-end;
-        justify-content: center;    
-        background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg);
+        justify-content: center; 
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 5px;
-        margin: 20px 20px 20px 20px;
+        margin: 10px 10px 10px 10px;
 
-    }
+        p {
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-style: italic;
+           font-size: 2rem; 
+           color: black;
+           font-weight: 500;
+        }
+        
+        &__uno{
+            grid-area: uno;   
+            background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); 
+            
+        }
+        
+        &__dos{
+            grid-area: dos;
+            background-image: url(../recursos/cultivo-de-algas.png);
+        }
 
+        &__tres{
+            grid-area: tres;
+            background-image: url(../recursos/compostaje668x200x80.jpg);
+            
+            p{
+                color: white;
+            }
+        }
 
-
-    .bloque__dos{
-        grid-area: dos;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        background-color: yellowgreen;
-        margin: 20px 20px 20px 20px;
-        background-image: url(../recursos/cultivo-de-algas.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .bloque__tres{
-        grid-area: tres;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        background-image: url(../recursos/compostaje668x200x80.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: 5px;
-        margin: 20px 20px 20px 20px;
-    }
-
-    .bloque__cuatro{
-        grid-area: cuatro;
-        background-color: aqua;
-        margin: 20px 20px 20px 20px;
-    }
-
-    .bloque__cinco{
-        grid-area: cinco;
-        background-color: tomato;
-        margin: 20px 20px 20px 20px;
-    }
-
-    .bloque__seis{
-        grid-area: seis;
-        background-color: teal;
-        margin: 20px 20px 20px 20px;
-    }
-
-
+        &__cuatro{
+            grid-area: cuatro;
+            background-image: url(../recursos/Granos.jpg);
+        }
     
+        &__cinco{
+            grid-area: cinco;
+            background-image: url(../recursos/Guana.jpg);
+    
+        }
+    
+        &__seis{
+            grid-area: seis;
+            background-image: url(../recursos/EdiSus.jpg);
+            
+        }
+
+        &__siete {
+            grid-area: siete;
+            background-image: url(../recursos/Bacteria.jpg);
+            p{
+                color: white;
+            }
+        }
+    }
+
+
     .grid__conteiner a {
         text-decoration: none;
         font-size: large;
         text-align: center;
     }
-    
-    
-    
-       
     
     
     /*----------------------CONTACTO--------------------------*/

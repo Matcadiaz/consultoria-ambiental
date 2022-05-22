@@ -173,56 +173,53 @@ body {
       background-image: url(../recursos/GesAmb.jpg); }
   body .grid__conteiner {
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
     gap: 20px;
-    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos"  "uno uno tres tres" "cuatro cuatro cinco cinco" "seis seis cinco cinco";
+    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos"  "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco" "seis seis siete siete" "seis seis siete siete";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2rem 1rem 2rem 1rem; }
   body .blog__titulo {
     grid-area: titulo;
     text-align: center; }
-  body .bloque__uno {
-    grid-area: uno;
-    background-color: red;
+  body .bloque {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 5px;
-    margin: 20px 20px 20px 20px; }
-  body .bloque__dos {
-    grid-area: dos;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: yellowgreen;
-    margin: 20px 20px 20px 20px;
-    background-image: url(../recursos/cultivo-de-algas.png);
-    background-repeat: no-repeat;
-    background-size: cover; }
-  body .bloque__tres {
-    grid-area: tres;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url(../recursos/compostaje668x200x80.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 5px;
-    margin: 20px 20px 20px 20px; }
-  body .bloque__cuatro {
-    grid-area: cuatro;
-    background-color: aqua;
-    margin: 20px 20px 20px 20px; }
-  body .bloque__cinco {
-    grid-area: cinco;
-    background-color: tomato;
-    margin: 20px 20px 20px 20px; }
-  body .bloque__seis {
-    grid-area: seis;
-    background-color: teal;
-    margin: 20px 20px 20px 20px; }
+    margin: 10px 10px 10px 10px; }
+    body .bloque p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-size: 2rem;
+      color: black;
+      font-weight: 500; }
+    body .bloque__uno {
+      grid-area: uno;
+      background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); }
+    body .bloque__dos {
+      grid-area: dos;
+      background-image: url(../recursos/cultivo-de-algas.png); }
+    body .bloque__tres {
+      grid-area: tres;
+      background-image: url(../recursos/compostaje668x200x80.jpg); }
+      body .bloque__tres p {
+        color: white; }
+    body .bloque__cuatro {
+      grid-area: cuatro;
+      background-image: url(../recursos/Granos.jpg); }
+    body .bloque__cinco {
+      grid-area: cinco;
+      background-image: url(../recursos/Guana.jpg); }
+    body .bloque__seis {
+      grid-area: seis;
+      background-image: url(../recursos/EdiSus.jpg); }
+    body .bloque__siete {
+      grid-area: siete;
+      background-image: url(../recursos/Bacteria.jpg); }
+      body .bloque__siete p {
+        color: white; }
   body .grid__conteiner a {
     text-decoration: none;
     font-size: large;
