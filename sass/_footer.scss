@@ -1,19 +1,20 @@
 footer {
+    
     display: grid;
     grid-template-areas: "footer_uno footer_dos footer_tres";
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
     height: 100%;
     margin-top: auto;
-    background-color: rgba(255, 0, 0, 0.808);
     border-top: 3px solid black;
-    
+
     .footer_uno{
         grid-area: footer_uno;
         display: flex;
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
+      
     }
     
     .footer_dos{
@@ -37,7 +38,7 @@ footer {
         padding-top: 1.2rem;
         padding-bottom: 1rem;
         
-        .footer__redes--logos {
+        &--logos {
             display: flex; 
             justify-content: center;
         } 
