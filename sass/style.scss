@@ -41,6 +41,9 @@ body {
                     background-size: 100% 2px;
                     transition: 0.4s;
                 }
+                &:visited{
+                    color: red;
+                }
             }
         
         } 
@@ -59,15 +62,8 @@ body {
         width: 100%;
     }
     
-    a{
-        color: black;
-
-        &:hover{
-            color: yellow;
-        }
-        &:visited{
-            color: grey;
-        }
+    a:visited{
+        color: red;
     }
     
 
@@ -84,54 +80,19 @@ body {
     
     /* ----------------------SERVICIOS----------------------------*/
     
-    .main__servicios{
-        display: flex;
-        flex-direction: column;
-    }
-    .servicios__titulo{
-        display: flex;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-    }
-    
-    .servicios {
-        display: flex; 
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 100px 30px 30px 30px;
-        padding-right: 50px;
-      
-    }
-    
-    
-    .serviciosUnificados {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        max-width: 25rem;
-        margin: 2.5% 2.5% 2.5% 2.5%;
-        object-fit: cover;
-        border: 3px solid black;
-        border-radius: 5px;
-        background-color: white;
-    }
-    
-    
+
     .button__style {
         cursor: pointer;
         width: 100px;
         padding: 5px;
         border-radius: 5px;
-        margin: 0 auto;
         border: none;
+        
         &:hover {
-            background-color: rgb(1, 3, 10);
+            background-color: rgb(12, 226, 12);
             color: white;
         }
+        
     }
 
     .img {
@@ -168,6 +129,9 @@ body {
         }
     }
 
+    .cajita{
+        height: inherit;
+    }
 
     
 
@@ -176,15 +140,13 @@ body {
     
     .grid__conteiner {
         display: grid;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr ;
         gap: 20px;
         grid-template-areas: "titulo titulo titulo titulo"
                             "uno uno dos dos" 
                             "uno uno tres tres"
                             "cuatro cuatro cinco cinco"
-                            "cuatro cuatro cinco cinco"
-                            "seis seis siete siete"
-                            "seis seis siete siete";
+                            "cuatro cuatro cinco cinco";
 
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 2rem 1rem 2rem 1rem;
@@ -245,25 +207,11 @@ body {
     
         }
     
-        &__seis{
-            grid-area: seis;
-            background-image: url(../recursos/EdiSus.jpg);
-            
-        }
-
-        &__siete {
-            grid-area: siete;
-            background-image: url(../recursos/Bacteria.jpg);
-            p{
-                color: white;
-            }
-        }
     }
 
 
     .grid__conteiner a {
         text-decoration: none;
-        font-size: large;
         text-align: center;
     }
     
@@ -276,7 +224,99 @@ body {
 
     /* ------MEDIA QUERIES----- */
     
+    
+
+
+    @media screen and (min-width: 320px) and (max-width: 540px) {
+        
+        
+
+    .blog__titulo {
+        background-color: darkmagenta;
+    }
+
+    .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: "titulo titulo "
+                            "titulo titulo"
+                            "uno uno"                             
+                            "uno uno"
+                            "dos dos"
+                            "tres tres"
+                            "cuatro cuatro"
+                            "cinco cinco"
+                            "cinco cinco";
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: center;
+    }
+    .bloque{
+        p{
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+ 
+
+    .servicios{
+        display: flex; 
+        flex-direction:column;
+        justify-content: center;
+
+    }
+
+    .portada__quienesSomos{
+        display: flex;
+       
+    }
+    }
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        height: 100%;
+
+    }
+    }    
+
+    @media screen and (min-width: 541x) and (max-width: 720px) {
 
 
 
+    .grid__conteiner {
+    gap: 20px;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr ;
+    grid-template-areas: "titulo titulo "
+                        "titulo titulo"
+                        "uno uno"                             
+                        "uno uno"
+                        "dos dos"
+                        "tres tres"
+                        "cuatro cuatro"
+                        "cuatro cuatro"
+                        "cinco cinco"
+                        "cinco cinco" ;
+    padding: 2rem 1rem 2rem 1rem;
+    }
+
+    .bloque{
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                        "footer_dos footer_dos footer_dos" 
+                        "footer_tres footer_tres footer_tres";
+    
+        grid-template-rows: 1.5rem;
+        height: 100%;   
+    }
+    }
 }

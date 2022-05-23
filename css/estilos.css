@@ -33,38 +33,6 @@ footer {
   footer .footer_logoPadding {
     padding: 0.5rem; }
 
-@media screen and (min-width: 320px) and (max-width: 540px) {
-  .blog__titulo {
-    background-color: darkmagenta; }
-  .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
-    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco" "seis seis";
-    padding: 2rem 1rem 2rem 1rem;
-    text-align: center; }
-  .servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .portada__quienesSomos {
-    display: flex; }
-  footer {
-    display: grid;
-    grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
-    height: 100%; } }
-
-@media screen and (min-width: 541x) and (max-width: 720px) {
-  .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco" "seis seis";
-    padding: 2rem 1rem 2rem 1rem; }
-  footer {
-    display: grid;
-    grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
-    grid-template-rows: 1.5rem;
-    height: 100%; } }
-
 * {
   margin: 0;
   padding: 0;
@@ -99,58 +67,28 @@ body {
       body ul li a:hover, body ul li a:focus {
         background-size: 100% 2px;
         transition: 0.4s; }
+      body ul li a:visited {
+        color: red; }
   body .carousel-item, body .carousel-inner, body .carousel-inner img {
     height: 85vh;
     object-fit: cover; }
   body h1 {
     font-size: 50px;
     width: 100%; }
-  body a {
-    color: black; }
-    body a:hover {
-      color: yellow; }
-    body a:visited {
-      color: grey; }
+  body a:visited {
+    color: red; }
   body .card__background--presentacion {
     background-color: rgba(11, 156, 67, 0.726); }
   body .card-deck {
     margin: 0 auto; }
-  body .main__servicios {
-    display: flex;
-    flex-direction: column; }
-  body .servicios__titulo {
-    display: flex;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 20px; }
-  body .servicios {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 100px 30px 30px 30px;
-    padding-right: 50px; }
-  body .serviciosUnificados {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    max-width: 25rem;
-    margin: 2.5% 2.5% 2.5% 2.5%;
-    object-fit: cover;
-    border: 3px solid black;
-    border-radius: 5px;
-    background-color: white; }
   body .button__style {
     cursor: pointer;
     width: 100px;
     padding: 5px;
     border-radius: 5px;
-    margin: 0 auto;
     border: none; }
     body .button__style:hover {
-      background-color: #01030a;
+      background-color: #0ce20c;
       color: white; }
   body .img {
     background-position: center center;
@@ -171,11 +109,13 @@ body {
       background-image: url(../recursos/GesEfluGas.jpg); }
     body .img__GesAmb {
       background-image: url(../recursos/GesAmb.jpg); }
+  body .cajita {
+    height: inherit; }
   body .grid__conteiner {
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
     gap: 20px;
-    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos"  "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco" "seis seis siete siete" "seis seis siete siete";
+    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos"  "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2rem 1rem 2rem 1rem; }
   body .blog__titulo {
@@ -212,17 +152,45 @@ body {
     body .bloque__cinco {
       grid-area: cinco;
       background-image: url(../recursos/Guana.jpg); }
-    body .bloque__seis {
-      grid-area: seis;
-      background-image: url(../recursos/EdiSus.jpg); }
-    body .bloque__siete {
-      grid-area: siete;
-      background-image: url(../recursos/Bacteria.jpg); }
-      body .bloque__siete p {
-        color: white; }
   body .grid__conteiner a {
     text-decoration: none;
-    font-size: large;
     text-align: center; }
   body .card__background {
     background-color: rgba(188, 231, 245, 0.582); }
+  @media screen and (min-width: 320px) and (max-width: 540px) {
+    body .blog__titulo {
+      background-color: darkmagenta; }
+    body .grid__conteiner {
+      gap: 20px;
+      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+      grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco";
+      grid-template-columns: 1fr 1fr;
+      padding: 2rem 1rem 2rem 1rem;
+      text-align: center; }
+    body .bloque p {
+      font-size: 1.3rem;
+      font-weight: 500; }
+    body .bloque .servicios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    body .bloque .portada__quienesSomos {
+      display: flex; }
+    body footer {
+      display: grid;
+      grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+      height: 100%; } }
+  @media screen and (min-width: 541x) and (max-width: 720px) {
+    body .grid__conteiner {
+      gap: 20px;
+      grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+      grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cuatro cuatro" "cinco cinco" "cinco cinco";
+      padding: 2rem 1rem 2rem 1rem; }
+    body .bloque p {
+      font-size: 1rem;
+      font-weight: 400; }
+    body footer {
+      display: grid;
+      grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+      grid-template-rows: 1.5rem;
+      height: 100%; } }
