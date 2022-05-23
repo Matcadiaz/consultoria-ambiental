@@ -67,8 +67,6 @@ body {
       body ul li a:hover, body ul li a:focus {
         background-size: 100% 2px;
         transition: 0.4s; }
-      body ul li a:visited {
-        color: red; }
   body .carousel-item, body .carousel-inner, body .carousel-inner img {
     height: 85vh;
     object-fit: cover; }
@@ -109,7 +107,7 @@ body {
       background-image: url(../recursos/GesEfluGas.jpg); }
     body .img__GesAmb {
       background-image: url(../recursos/GesAmb.jpg); }
-  body .cajita {
+  body .style__box {
     height: inherit; }
   body .grid__conteiner {
     display: grid;
