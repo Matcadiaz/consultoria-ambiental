@@ -1,3 +1,4 @@
+@import 'variables';
 @import 'footer';
 @import 'mediaqueries';
     
@@ -5,8 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: $font-size;
     box-sizing: border-box;
 }
  
@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: $principal-font;
     
 
     .nav__animacion:hover{
@@ -68,7 +69,7 @@ body {
     /* ---------------------QUIENES SOMOS--------------------------*/
     
      .card__background--presentacion{
-         background-color: rgba(11, 156, 67, 0.726);
+         background-color: $color-principal;
      }
     
     
@@ -87,8 +88,8 @@ body {
         border: none;
         
         &:hover {
-            background-color: rgb(12, 226, 12);
-            color: white;
+            background-color: $color-secundario;
+            color: $color-terciario;
         }
         
     }
@@ -153,6 +154,7 @@ body {
     .blog__titulo {
         grid-area: titulo;
         text-align: center;
+        color: $color-terciario;
     }
     
 
@@ -190,7 +192,7 @@ body {
             background-image: url(../recursos/compostaje668x200x80.jpg);
             
             p{
-                color: white;
+                color: $color-terciario;
             }
         }
 
@@ -220,101 +222,4 @@ body {
        background-color: rgba(188, 231, 245, 0.582);
     }
 
-    /* ------MEDIA QUERIES----- */
     
-    
-
-
-    @media screen and (min-width: 320px) and (max-width: 540px) {
-        
-        
-
-    .blog__titulo {
-        background-color: darkmagenta;
-    }
-
-    .grid__conteiner {
-        gap: 20px;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
-        grid-template-areas: "titulo titulo "
-                            "titulo titulo"
-                            "uno uno"                             
-                            "uno uno"
-                            "dos dos"
-                            "tres tres"
-                            "cuatro cuatro"
-                            "cinco cinco"
-                            "cinco cinco";
-        grid-template-columns: 1fr 1fr;
-        padding: 2rem 1rem 2rem 1rem;
-        text-align: center;
-    }
-    .bloque{
-        p{
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-
- 
-
-    .servicios{
-        display: flex; 
-        flex-direction:column;
-        justify-content: center;
-
-    }
-
-    .portada__quienesSomos{
-        display: flex;
-       
-    }
-    }
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                            "footer_dos footer_dos footer_dos" 
-                            "footer_tres footer_tres footer_tres";
-        height: 100%;
-
-    }
-    }    
-
-    @media screen and (min-width: 541x) and (max-width: 720px) {
-
-
-
-    .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr ;
-    grid-template-areas: "titulo titulo "
-                        "titulo titulo"
-                        "uno uno"                             
-                        "uno uno"
-                        "dos dos"
-                        "tres tres"
-                        "cuatro cuatro"
-                        "cuatro cuatro"
-                        "cinco cinco"
-                        "cinco cinco" ;
-    padding: 2rem 1rem 2rem 1rem;
-    }
-
-    .bloque{
-    p{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    }
-
-
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                        "footer_dos footer_dos footer_dos" 
-                        "footer_tres footer_tres footer_tres";
-    
-        grid-template-rows: 1.5rem;
-        height: 100%;   
-    }
-    }
-}
