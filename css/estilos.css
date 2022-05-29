@@ -1,3 +1,4 @@
+/* MIXINS */
 footer {
   display: grid;
   grid-template-areas: "footer_uno footer_dos footer_tres";
@@ -93,8 +94,7 @@ body {
   /* ---------------------QUIENES SOMOS--------------------------*/
   /* ----------------------SERVICIOS----------------------------*/
   /*----------------------BLOG----------------------------- */
-  /*----------------------CONTACTO--------------------------*/
-  /* ------MEDIA QUERIES----- */ }
+  /*----------------------CONTACTO--------------------------*/ }
   body .nav__animacion:hover {
     transition-duration: 0.4s;
     transform: scale(1.2); }
@@ -154,10 +154,10 @@ body {
     height: inherit; }
   body .grid__conteiner {
     display: grid;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
     gap: 20px;
-    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos"  "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco";
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos" "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco";
     padding: 2rem 1rem 2rem 1rem; }
   body .blog__titulo {
     grid-area: titulo;
@@ -199,26 +199,6 @@ body {
     text-align: center; }
   body .card__background {
     background-color: rgba(188, 231, 245, 0.582); }
-  @media (min-width: 320px) and (max-width: 540px) {
-    body .blog__titulo {
-      font-size: 1rem; }
-    body .grid__conteiner {
-      gap: 20px;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
-      grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco";
-      grid-template-columns: 1fr 1fr;
-      padding: 2rem 1rem 2rem 1rem;
-      text-align: center; }
-    body .bloque p {
-      font-size: 1.3rem;
-      font-weight: 500; }
-    body .bloque .servicios {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-    body .bloque .portada__quienesSomos {
-      display: flex; }
-    body footer {
-      display: grid;
-      grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
-      height: 100%; } }
+  body .container {
+    margin-top: 8rem;
+    margin-bottom: 8rem; }

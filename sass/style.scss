@@ -137,17 +137,12 @@ body {
 
     /*----------------------BLOG----------------------------- */
     
-    .grid__conteiner {
-        display: grid;
-        grid-template-rows: 1fr 2fr 2fr 2fr 2fr ;
-        gap: 20px;
-        grid-template-areas: "titulo titulo titulo titulo"
-                            "uno uno dos dos" 
-                            "uno uno tres tres"
-                            "cuatro cuatro cinco cinco"
-                            "cuatro cuatro cinco cinco";
-
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .grid__conteiner{
+        @include grid (grid, 20px, 1fr 1fr 1fr 1fr, 1fr 2fr 2fr 2fr 2fr,"titulo titulo titulo titulo"
+        "uno uno dos dos" 
+        "uno uno tres tres"
+        "cuatro cuatro cinco cinco"
+        "cuatro cuatro cinco cinco");
         padding: 2rem 1rem 2rem 1rem;
     }
     
@@ -220,6 +215,11 @@ body {
     
     .card__background {
        background-color: rgba(188, 231, 245, 0.582);
-    }
-
     
+    }
+    
+    .container {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+}

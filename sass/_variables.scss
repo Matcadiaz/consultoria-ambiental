@@ -4,3 +4,14 @@ $color-terciario: white;
 $font-size: 1.2rem;
 $principal-font: 'Roboto', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
+
+
+/* MIXINS */
+
+@mixin grid ($display, $gap, $columns, $rows, $areas){
+    display: $display;
+    gap: $gap;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+}
