@@ -63,7 +63,7 @@ footer {
   .grid__conteiner {
     gap: 20px;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "titulo titulo titulo " "titulo titulo titulo" "uno uno uno"                              "uno uno uno" "dos dos dos" "tres tres tres" "cuatro cuatro cuatro" "cuatro cuatro cuatro" "cinco cinco cinco" "cinco cinco cinco";
+    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                               "uno uno"  "dos dos"  "tres tres" "cuatro cuatro" "cuatro cuatro" "cinco cinco" "cinco cinco";
     padding: 2rem 1rem 2rem 1rem; }
   grid-template-columns: 2fr 2fr 2fr;
   .blog__titulo {
@@ -116,7 +116,7 @@ body {
   body h1 {
     font-size: 50px;
     width: 100%;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Roboto", sans-serif; }
   body a:visited {
     color: red; }
   body .card__background--presentacion {
