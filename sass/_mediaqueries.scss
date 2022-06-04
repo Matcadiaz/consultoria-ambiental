@@ -2,9 +2,30 @@
 @media (min-width: 320px) and (max-width: 540px) {
     
     
+    .bloque p {
+        
+            font-size: 1rem;
+            font-weight: 500;
+        
+    }
+    
 
-    .blog__titulo {
-        font-size: 1rem;
+    
+
+    .blog__titulo h1 {
+        font-size: 2.5rem;
+
+    }
+    
+
+
+    
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        height: 100%;
 
     }
 
@@ -21,37 +42,9 @@
                             "cinco cinco"
                             "cinco cinco";
         
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         padding: 2rem 1rem 2rem 1rem;
         text-align: center;
-    }
-    .bloque{
-        p{
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-
-    
-
-    .servicios{
-        display: flex; 
-        flex-direction:column;
-        justify-content: center;
-
-    }
-
-    .portada__quienesSomos{
-        display: flex;
-        
-    }
-    }
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                            "footer_dos footer_dos footer_dos" 
-                            "footer_tres footer_tres footer_tres";
-        height: 100%;
-
     }
 }    
 

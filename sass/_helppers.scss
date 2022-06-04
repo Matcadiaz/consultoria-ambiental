@@ -1,0 +1,9 @@
+/* MIXINS */
+
+@mixin grid ($display, $gap, $columns, $rows, $areas){
+    display: $display;
+    gap: $gap;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+}
