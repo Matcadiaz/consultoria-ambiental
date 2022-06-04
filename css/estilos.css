@@ -115,7 +115,8 @@ body {
     object-fit: cover; }
   body h1 {
     font-size: 50px;
-    width: 100%; }
+    width: 100%;
+    font-family: "Montserrat", sans-serif; }
   body a:visited {
     color: red; }
   body .card__background--presentacion {
