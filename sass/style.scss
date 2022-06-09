@@ -58,8 +58,8 @@ body {
     
     
     h1{
-        font-size: 50px;
-        width: 100%;
+        font-size: 4rem;
+        /* width: 100%; */
         font-family: $principal-font;
         margin: 20px 20px 20px 20px;
     }
@@ -164,6 +164,7 @@ body {
         justify-content: center; 
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment:local;
         padding-bottom: 5px;
         margin: 10px 10px 10px 10px;
 
@@ -172,7 +173,7 @@ body {
            font-style: italic;
            font-size: 2rem; 
            color: black;
-           font-weight: 500;
+           font-weight: 400;
         }
         
         &__uno{
