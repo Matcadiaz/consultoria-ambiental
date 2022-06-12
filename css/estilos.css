@@ -52,24 +52,50 @@ footer {
     grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
     height: 100%; } }
 
-@media (min-width: 541x) and (max-width: 720px) {
-  .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                               "uno uno"  "dos dos"  "tres tres" "cuatro cuatro" "cuatro cuatro" "cinco cinco" "cinco cinco";
-    padding: 2rem 1rem 2rem 1rem; }
-  grid-template-columns: 2fr 2fr 2fr;
-  .blog__titulo {
-    font-size: 25rem; }
-  .bloque p {
-    font-size: 1rem;
-    font-weight: 400; }
-  footer {
-    display: grid;
-    grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
-    grid-template-rows: 1.5rem;
-    height: 100%; } }
+/* @media (min-width: 541x) and (max-width: 720px) {
 
+
+
+    .grid__conteiner {
+    gap: 20px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "titulo titulo "
+                        "titulo titulo"
+                        "uno uno"                              
+                        "uno uno" 
+                        "dos dos" 
+                        "tres tres"
+                        "cuatro cuatro"
+                        "cuatro cuatro"
+                        "cinco cinco"
+                        "cinco cinco" ;
+    padding: 2rem 1rem 2rem 1rem;
+    }
+    grid-template-columns:  4fr;
+
+    .blog__titulo{
+        font-size: 25rem;
+    }
+    
+    .bloque{
+    
+     p{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno"
+                        "footer_dos footer_dos footer_dos" 
+                        "footer_tres footer_tres footer_tres";
+    
+        grid-template-rows: 1.5rem;
+        height: 100%;   
+    }
+} */
 * {
   margin: 0;
   padding: 0;
@@ -87,7 +113,8 @@ body {
   /* ---------------------QUIENES SOMOS--------------------------*/
   /* ----------------------SERVICIOS----------------------------*/
   /*----------------------BLOG----------------------------- */
-  /*----------------------CONTACTO--------------------------*/ }
+  /*----------------------CONTACTO--------------------------*/
+  /*----------------------MEDIA QUERY--------------------------*/ }
   body .nav__animacion:hover {
     transition-duration: 0.4s;
     transform: scale(1.2); }
@@ -106,17 +133,22 @@ body {
   body .carousel-item, body .carousel-inner, body .carousel-inner img {
     height: 85vh;
     object-fit: cover; }
+  body .fondo__carrusel {
+    background-color: rgba(255, 255, 255, 0.822);
+    border-radius: 50%; }
   body h1 {
     font-size: 4rem;
     /* width: 100%; */
     font-family: "Roboto", sans-serif;
-    margin: 20px 20px 20px 20px; }
+    margin: 20px 20px 20px 20px;
+    color: white; }
   body a:visited {
     color: red; }
   body .card__background--presentacion {
     background-color: rgba(11, 156, 67, 0.726); }
   body .card-deck {
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 320px; }
   body .button__style {
     cursor: pointer;
     width: 100px;
@@ -147,6 +179,11 @@ body {
       background-image: url(../recursos/GesAmb.jpg); }
   body .style__box {
     height: inherit; }
+  body .animacion__servicios {
+    transition-duration: 0.3s;
+    transition-property: transform; }
+    body .animacion__servicios:hover {
+      transform: scale(1.05); }
   body .grid__conteiner {
     display: grid;
     gap: 20px;
@@ -170,9 +207,10 @@ body {
     body .bloque p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-style: italic;
-      font-size: 2rem;
-      color: black;
-      font-weight: 400; }
+      font-size: 1.5rem;
+      color: white;
+      font-weight: 200;
+      text-align: center; }
     body .bloque__uno {
       grid-area: uno;
       background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); }
@@ -182,19 +220,58 @@ body {
     body .bloque__tres {
       grid-area: tres;
       background-image: url(../recursos/compostaje668x200x80.jpg); }
-      body .bloque__tres p {
-        color: white; }
     body .bloque__cuatro {
       grid-area: cuatro;
       background-image: url(../recursos/Granos.jpg); }
     body .bloque__cinco {
       grid-area: cinco;
       background-image: url(../recursos/Guana.jpg); }
+  body a p {
+    background-color: rgba(66, 41, 11, 0.685); }
   body .grid__conteiner a {
-    text-decoration: none;
-    text-align: center; }
+    text-decoration: none; }
   body .card__background {
     background-color: rgba(188, 231, 245, 0.582); }
   body .container {
     margin-top: 8rem;
     margin-bottom: 8rem; }
+  @media (min-width: 320px) and (max-width: 540px) {
+    body .card-deck {
+      margin: 0 auto;
+      width: 320px; }
+    body .grid__conteiner {
+      gap: 20px;
+      grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+      grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "dos dos" "tres tres" "tres tres" "cuatro cuatro" "cuatro cuatro" "cinco cinco" "cinco cinco";
+      grid-template-columns: 2fr;
+      padding: 2rem 1rem 2rem 1rem; }
+    body .bloque p {
+      font-size: 1rem;
+      font-weight: 500; }
+    body .blog__titulo h1 {
+      font-size: 2.5rem; }
+    body footer {
+      display: grid;
+      grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+      height: 100%; } }
+  @media (min-width: 541x) and (max-width: 720px) {
+    body {
+      grid-template-columns: 1fr; }
+      body .card-deck {
+        margin: 0 auto;
+        width: 450px; }
+      body .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo titulo titulo"  "uno uno uno"                               "uno uno uno"  "dos dos dos"  "tres tres tres" "cuatro cuatro cuatro" "cuatro cuatro cuatro" "cinco cinco cinco" "cinco cinco cinco";
+        padding: 2rem 1rem 2rem 1rem; }
+      body .blog__titulo {
+        font-size: 25rem; }
+      body .bloque p {
+        font-size: 1rem;
+        font-weight: 400; }
+      body footer {
+        display: grid;
+        grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+        grid-template-rows: 1.5rem;
+        height: 100%; } }

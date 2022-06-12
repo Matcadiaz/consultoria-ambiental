@@ -56,13 +56,13 @@
 
 
 
-@media (min-width: 541x) and (max-width: 720px) {
+/* @media (min-width: 541x) and (max-width: 720px) {
 
 
 
     .grid__conteiner {
     gap: 20px;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "titulo titulo "
                         "titulo titulo"
                         "uno uno"                              
@@ -75,7 +75,7 @@
                         "cinco cinco" ;
     padding: 2rem 1rem 2rem 1rem;
     }
-    grid-template-columns:  2fr 2fr 2fr;
+    grid-template-columns:  4fr;
 
     .blog__titulo{
         font-size: 25rem;
@@ -99,6 +99,6 @@
         grid-template-rows: 1.5rem;
         height: 100%;   
     }
-}
+} */
 
 

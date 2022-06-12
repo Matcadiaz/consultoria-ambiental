@@ -53,15 +53,21 @@ body {
     
     .carousel-item, .carousel-inner, .carousel-inner img{ 
         height: 85vh;
-        object-fit: cover;
+        object-fit:cover;
     }
-    
+
+    .fondo__carrusel{
+        background-color: rgba(255, 255, 255, 0.822) ;
+        border-radius: 50%;
+        
+    }
     
     h1{
         font-size: 4rem;
         /* width: 100%; */
         font-family: $principal-font;
         margin: 20px 20px 20px 20px;
+        color: $color-terciario;
     }
     
     a:visited{
@@ -75,9 +81,11 @@ body {
          background-color: $color-principal;
      }
     
+   
     
     .card-deck {
         margin: 0 auto;
+        width: 320px;
     }
     
     /* ----------------------SERVICIOS----------------------------*/
@@ -135,8 +143,15 @@ body {
         height: inherit;
     }
 
+    .animacion__servicios {
+        transition-duration: 0.3s;
+        transition-property: transform;
+        
+        &:hover{
+            transform: scale(1.05)
+        }
+    }
     
-
 
     /*----------------------BLOG----------------------------- */
     
@@ -171,9 +186,11 @@ body {
         p {
            font-family:Verdana, Geneva, Tahoma, sans-serif;
            font-style: italic;
-           font-size: 2rem; 
-           color: black;
-           font-weight: 400;
+           font-size: 1.5rem; 
+           color: $color-terciario;
+           font-weight: 200;
+           text-align: center;
+           
         }
         
         &__uno{
@@ -191,9 +208,6 @@ body {
             grid-area: tres;
             background-image: url(../recursos/compostaje668x200x80.jpg);
             
-            p{
-                color: $color-terciario;
-            }
         }
 
         &__cuatro{
@@ -206,13 +220,18 @@ body {
             background-image: url(../recursos/Guana.jpg);
     
         }
+
+       
     
     }
 
+    a p{
+        background-color: rgba(66, 41, 11, 0.685);
+    
+    }
 
     .grid__conteiner a {
-        text-decoration: none;
-        text-align: center;
+        text-decoration:none;
     }
     
     
@@ -226,5 +245,114 @@ body {
     .container {
         margin-top: 8rem;
         margin-bottom: 8rem;
+    }
+
+    /*----------------------MEDIA QUERY--------------------------*/
+
+    @media (min-width: 320px) and (max-width: 540px) {
+
+        .card-deck {
+            margin: 0 auto;
+            width: 320px;
+        }
+
+        .grid__conteiner {
+            gap: 20px;
+            grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+            grid-template-areas: "titulo titulo "
+                                "titulo titulo"
+                                "uno uno"                             
+                                "uno uno"
+                                "dos dos"
+                                "dos dos"
+                                "tres tres"
+                                "tres tres"
+                                "cuatro cuatro"
+                                "cuatro cuatro"
+                                "cinco cinco"
+                                "cinco cinco";
+            
+            grid-template-columns: 2fr;
+            padding: 2rem 1rem 2rem 1rem;
+            
+        }
+        
+        .bloque{
+            
+            p{
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+        
+    
+        
+    
+        .blog__titulo h1 {
+            font-size: 2.5rem;
+    
+        }
+        
+    
+    
+        
+        footer {
+            display: grid;
+            grid-template-areas: "footer_uno footer_uno footer_uno"
+                                "footer_dos footer_dos footer_dos" 
+                                "footer_tres footer_tres footer_tres";
+            height: 100%;
+    
+        }
+    
+      
+    }  
+    
+    @media (min-width: 541x) and (max-width: 720px) {
+
+        .card-deck {
+            margin: 0 auto;
+            width: 450px;
+        }
+
+        .grid__conteiner {
+        gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "titulo titulo titulo"
+                            
+                            "uno uno uno"                              
+                            "uno uno uno" 
+                            "dos dos dos" 
+                            "tres tres tres"
+                            "cuatro cuatro cuatro"
+                            "cuatro cuatro cuatro"
+                            "cinco cinco cinco"
+                            "cinco cinco cinco" ;
+        padding: 2rem 1rem 2rem 1rem;
+        }
+        grid-template-columns:  1fr;
+    
+        .blog__titulo{
+            font-size: 25rem;
+        }
+        
+        .bloque{
+        
+         p{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        }
+    
+    
+        footer {
+            display: grid;
+            grid-template-areas: "footer_uno footer_uno footer_uno"
+                            "footer_dos footer_dos footer_dos" 
+                            "footer_tres footer_tres footer_tres";
+        
+            grid-template-rows: 1.5rem;
+            height: 100%;   
+        }
     }
 }
