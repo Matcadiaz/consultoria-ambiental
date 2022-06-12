@@ -85,11 +85,14 @@ body {
     
     .card-deck {
         margin: 0 auto;
-        width: 320px;
+        width: 30rem;
     }
     
     /* ----------------------SERVICIOS----------------------------*/
     
+    .serv__parrafo {
+        font-size: $tamaño-subtitulos;
+    }
 
     .button__style {
         cursor: pointer;
@@ -163,6 +166,7 @@ body {
         "cuatro cuatro cinco cinco"
         "cuatro cuatro cinco cinco");
         padding: 2rem 1rem 2rem 1rem;
+        
     }
     
     .blog__titulo {
@@ -182,6 +186,8 @@ body {
         background-attachment:local;
         padding-bottom: 5px;
         margin: 10px 10px 10px 10px;
+      
+        
 
         p {
            font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -196,7 +202,7 @@ body {
         &__uno{
             grid-area: uno;   
             background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); 
-            
+                     
         }
         
         &__dos{

@@ -52,50 +52,24 @@ footer {
     grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
     height: 100%; } }
 
-/* @media (min-width: 541x) and (max-width: 720px) {
-
-
-
-    .grid__conteiner {
+@media (min-width: 541x) and (max-width: 720px) {
+  .grid__conteiner {
     gap: 20px;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "titulo titulo "
-                        "titulo titulo"
-                        "uno uno"                              
-                        "uno uno" 
-                        "dos dos" 
-                        "tres tres"
-                        "cuatro cuatro"
-                        "cuatro cuatro"
-                        "cinco cinco"
-                        "cinco cinco" ;
-    padding: 2rem 1rem 2rem 1rem;
-    }
-    grid-template-columns:  4fr;
+    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                               "uno uno"  "dos dos"  "tres tres" "cuatro cuatro" "cuatro cuatro" "cinco cinco" "cinco cinco";
+    padding: 2rem 1rem 2rem 1rem; }
+  grid-template-columns: 4fr;
+  .blog__titulo {
+    font-size: 25rem; }
+  .bloque p {
+    font-size: 1rem;
+    font-weight: 400; }
+  footer {
+    display: grid;
+    grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+    grid-template-rows: 1.5rem;
+    height: 100%; } }
 
-    .blog__titulo{
-        font-size: 25rem;
-    }
-    
-    .bloque{
-    
-     p{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    }
-
-
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                        "footer_dos footer_dos footer_dos" 
-                        "footer_tres footer_tres footer_tres";
-    
-        grid-template-rows: 1.5rem;
-        height: 100%;   
-    }
-} */
 * {
   margin: 0;
   padding: 0;
@@ -145,10 +119,12 @@ body {
   body a:visited {
     color: red; }
   body .card__background--presentacion {
-    background-color: rgba(11, 156, 67, 0.726); }
+    background-color: rgba(11, 156, 67, 0.705); }
   body .card-deck {
     margin: 0 auto;
-    width: 320px; }
+    width: 30rem; }
+  body .serv__parrafo {
+    font-size: 1.5rem; }
   body .button__style {
     cursor: pointer;
     width: 100px;
