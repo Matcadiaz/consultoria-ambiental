@@ -1,5 +1,5 @@
 /* ------MEDIA QUERIES----- */
-@media (min-width: 320px) and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 540px) {
 
     .grid__conteiner {
         gap: 20px;
@@ -56,7 +56,7 @@
 
 
 
-@media (min-width: 541x) and (max-width: 720px) {
+/* @media (min-width: 541x) and (max-width: 720px) {
 
 
 
@@ -99,6 +99,32 @@
         grid-template-rows: 1.5rem;
         height: 100%;   
     }
-}
+} */
+
+@media screen and (max-width: 1024px) {
+
+        .grid__conteiner {
+            gap: 20px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "titulo titulo titulo"
+                                "uno uno uno"                              
+                                "uno uno uno" 
+                                "dos dos dos" 
+                                "tres tres tres"
+                                "cuatro cuatro cuatro"
+                                "cuatro cuatro cuatro"
+                                "cinco cinco cinco"
+                                "cinco cinco cinco" ;
+            padding: 2rem 1rem 2rem 1rem;
+            grid-template-columns:  1fr 1fr;
+        }
 
 
+        .bloque{
+        
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        }
+    }

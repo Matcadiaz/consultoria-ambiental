@@ -1,7 +1,8 @@
 @import 'variables';
 @import 'helppers';
+
 @import 'footer';
-@import 'mediaqueries';
+
     
 
 *{
@@ -254,7 +255,7 @@ body {
     }
 
     /*----------------------MEDIA QUERY--------------------------*/
-
+/* 
     @media (min-width: 320px) and (max-width: 540px) {
 
         .card-deck {
@@ -286,8 +287,8 @@ body {
         .bloque{
             
             p{
-                font-size: 1rem;
-                font-weight: 500;
+                font-size: 0.5rem;
+                font-weight: 300;
             }
         }
         
@@ -335,9 +336,9 @@ body {
                             "cinco cinco cinco"
                             "cinco cinco cinco" ;
         padding: 2rem 1rem 2rem 1rem;
-        }
         grid-template-columns:  1fr;
-    
+        }
+
         .blog__titulo{
             font-size: 25rem;
         }
@@ -361,4 +362,33 @@ body {
             height: 100%;   
         }
     }
+
+    @media screen and (max-width: 1024px) {
+
+        .grid__conteiner {
+            gap: 20px;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "titulo titulo titulo"
+                                "uno uno uno"                              
+                                "uno uno uno" 
+                                "dos dos dos" 
+                                "tres tres tres"
+                                "cuatro cuatro cuatro"
+                                "cuatro cuatro cuatro"
+                                "cinco cinco cinco"
+                                "cinco cinco cinco" ;
+            padding: 2rem 1rem 2rem 1rem;
+            grid-template-columns:  1fr;
+        }
+
+
+        .bloque{
+        
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+        }
+    } */
+    @import 'mediaqueries';
 }
