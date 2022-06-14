@@ -4,7 +4,3 @@
 ## Tecnologías
 
 <p> Para realizar este proyecto, se utilizó HTML, CSS, SASS y Node.Js. </p>
-
-### Imagenes
-
-<img src="">
