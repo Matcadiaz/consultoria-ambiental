@@ -1,0 +1,66 @@
+/* ----------------------SERVICIOS----------------------------*/
+    
+.serv__parrafo {
+    font-size: $tamaño-subtitulos;
+}
+
+.button__style {
+    cursor: pointer;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-terciario;
+    }
+    
+}
+
+.img {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 19px 19px 39px -13px rgba(0,0,0,0.75); 
+    
+    &__EIA{
+        background-image: url(../recursos/EIA.jpg);
+    }
+
+    &__MedSon{
+        background-image: url(../recursos/MedSon.jpg);
+    }
+
+    &__GesRes{
+        background-image: url(../recursos/GesRes.jpg);
+    }
+
+    &__GesEfluLiq{
+        background-image: url(../recursos/GesEfluLiq.jpg);
+    }
+
+    &__GesEfluGas{
+        background-image: url(../recursos/GesEfluGas.jpg);
+    }
+
+    &__GesAmb{
+        background-image: url(../recursos/GesAmb.jpg);
+    }
+}
+
+.style__box{
+    height: inherit;
+}
+
+.animacion__servicios {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    
+    &:hover{
+        transform: scale(1.05)
+    }
+}

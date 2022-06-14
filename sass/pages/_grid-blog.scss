@@ -1,0 +1,84 @@
+
+ /*----------------------BLOG----------------------------- */
+
+.grid__conteiner{
+    @include grid (grid, 20px, 1fr 1fr 1fr 1fr, 1fr 2fr 2fr 2fr 2fr,
+    "titulo titulo titulo titulo"
+    "uno uno dos dos" 
+    "uno uno tres tres"
+    "cuatro cuatro cinco cinco"
+    "cuatro cuatro cinco cinco");
+    padding: 2rem 1rem 2rem 1rem;
+    
+
+    .blog__titulo {
+        grid-area: titulo;
+        text-align: center;
+        color: $color-terciario;
+    }
+    
+
+    .bloque {
+
+        display: flex;
+        align-items: flex-end;
+        justify-content: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:local;
+        padding-bottom: 5px;
+        margin: 10px 10px 10px 10px;
+      
+        
+
+        p {
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-style: italic;
+           font-size: 1.5rem; 
+           color: $color-terciario;
+           font-weight: 200;
+           text-align: center;
+           
+        }
+        
+        &__uno{
+            grid-area: uno;   
+            background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); 
+                     
+        }
+        
+        &__dos{
+            grid-area: dos;
+            background-image: url(../recursos/cultivo-de-algas.png);
+        }
+
+        &__tres{
+            grid-area: tres;
+            background-image: url(../recursos/compostaje668x200x80.jpg);
+            
+        }
+
+        &__cuatro{
+            grid-area: cuatro;
+            background-image: url(../recursos/Granos.jpg);
+        }
+    
+        &__cinco{
+            grid-area: cinco;
+            background-image: url(../recursos/Guana.jpg);
+    
+        }
+
+       
+    
+    }
+
+    a p{
+        background-color: rgba(66, 41, 11, 0.685);
+    
+    }
+
+    a {
+        text-decoration:none;
+    }    
+}

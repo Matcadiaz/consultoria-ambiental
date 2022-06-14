@@ -1,5 +1,5 @@
 /* ------MEDIA QUERIES----- */
-@media screen and (min-width: 320px) and (max-width: 540px) {
+@media (min-width: 320px) and (max-width: 540px) {
 
     .grid__conteiner {
         gap: 20px;
@@ -17,6 +17,11 @@
         grid-template-columns: 2fr;
         padding: 2rem 1rem 2rem 1rem;
         
+    }
+
+    .card-deck {
+        margin: 0 auto;
+        width: 20rem;
     }
     
     .bloque{
@@ -51,56 +56,6 @@
 }    
 
 
-
-
-
-
-
-/* @media (min-width: 541x) and (max-width: 720px) {
-
-
-
-    .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "titulo titulo "
-                        "titulo titulo"
-                        "uno uno"                              
-                        "uno uno" 
-                        "dos dos" 
-                        "tres tres"
-                        "cuatro cuatro"
-                        "cuatro cuatro"
-                        "cinco cinco"
-                        "cinco cinco" ;
-    padding: 2rem 1rem 2rem 1rem;
-    }
-    grid-template-columns:  4fr;
-
-    .blog__titulo{
-        font-size: 25rem;
-    }
-    
-    .bloque{
-    
-     p{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    }
-
-
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                        "footer_dos footer_dos footer_dos" 
-                        "footer_tres footer_tres footer_tres";
-    
-        grid-template-rows: 1.5rem;
-        height: 100%;   
-    }
-} */
-
 @media screen and (max-width: 1024px) {
 
         .grid__conteiner {
@@ -119,6 +74,7 @@
             grid-template-columns:  1fr 1fr;
         }
 
+      
 
         .bloque{
         

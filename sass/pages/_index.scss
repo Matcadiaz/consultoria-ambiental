@@ -1,0 +1,65 @@
+body {
+    
+  
+    background-image: url(../recursos/naturaleza.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $principal-font;
+    
+
+    .nav__animacion:hover{
+        transition-duration: 0.4s;
+        transform: scale(1.2);
+    }
+    
+    ul {
+        li{
+            padding: 1rem;
+            
+            a {
+                text-decoration: none;
+                background-image: linear-gradient(blue, blue);
+                background-position: 0% 80%;
+                background-repeat: no-repeat;
+                background-size: 0% 1px;
+                transition: background-size .1s;
+                &:hover, &:focus {
+                    background-size: 100% 2px;
+                    transition: 0.4s;
+                }
+                
+            }
+        
+        } 
+    }
+
+    
+    
+    .carousel-item, .carousel-inner, .carousel-inner img{ 
+        height: 85vh;
+        object-fit:cover;
+    }
+
+    .fondo__carrusel{
+        background-color: rgba(255, 255, 255, 0.822) ;
+        border-radius: 50%;
+        
+    }
+    
+    h1{
+        font-size: 4rem;
+        /* width: 100%; */
+        font-family: $principal-font;
+        margin: 20px 20px 20px 20px;
+        color: $color-terciario;
+    }
+    
+    a:visited{
+        color: red;
+    }
+}    
+
+    

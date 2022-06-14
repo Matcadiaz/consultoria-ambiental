@@ -34,12 +34,6 @@ footer {
   footer .footer_logoPadding {
     padding: 0.5rem; }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2rem;
-  box-sizing: border-box; }
-
 body {
   background-image: url(../recursos/naturaleza.png);
   background-repeat: no-repeat;
@@ -47,192 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Roboto", sans-serif;
-  /* ---------------------QUIENES SOMOS--------------------------*/
-  /* ----------------------SERVICIOS----------------------------*/
-  /*----------------------BLOG----------------------------- */
-  /*----------------------CONTACTO--------------------------*/
-  /*----------------------MEDIA QUERY--------------------------*/
-  /* 
-    @media (min-width: 320px) and (max-width: 540px) {
-
-        .card-deck {
-            margin: 0 auto;
-            width: 320px;
-        }
-
-        .grid__conteiner {
-            gap: 20px;
-            grid-template-rows: 1fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-            grid-template-areas: "titulo titulo "
-                                "titulo titulo"
-                                "uno uno"                             
-                                "uno uno"
-                                "dos dos"
-                                "dos dos"
-                                "tres tres"
-                                "tres tres"
-                                "cuatro cuatro"
-                                "cuatro cuatro"
-                                "cinco cinco"
-                                "cinco cinco";
-            
-            grid-template-columns: 2fr;
-            padding: 2rem 1rem 2rem 1rem;
-            
-        }
-        
-        .bloque{
-            
-            p{
-                font-size: 0.5rem;
-                font-weight: 300;
-            }
-        }
-        
-    
-        
-    
-        .blog__titulo h1 {
-            font-size: 2.5rem;
-    
-        }
-        
-    
-    
-        
-        footer {
-            display: grid;
-            grid-template-areas: "footer_uno footer_uno footer_uno"
-                                "footer_dos footer_dos footer_dos" 
-                                "footer_tres footer_tres footer_tres";
-            height: 100%;
-    
-        }
-    
-      
-    }  
-    
-    @media (min-width: 541x) and (max-width: 720px) {
-
-        .card-deck {
-            margin: 0 auto;
-            width: 450px;
-        }
-
-        .grid__conteiner {
-        gap: 20px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "titulo titulo titulo"
-                            
-                            "uno uno uno"                              
-                            "uno uno uno" 
-                            "dos dos dos" 
-                            "tres tres tres"
-                            "cuatro cuatro cuatro"
-                            "cuatro cuatro cuatro"
-                            "cinco cinco cinco"
-                            "cinco cinco cinco" ;
-        padding: 2rem 1rem 2rem 1rem;
-        grid-template-columns:  1fr;
-        }
-
-        .blog__titulo{
-            font-size: 25rem;
-        }
-        
-        .bloque{
-        
-         p{
-            font-size: 1rem;
-            font-weight: 400;
-        }
-        }
-    
-    
-        footer {
-            display: grid;
-            grid-template-areas: "footer_uno footer_uno footer_uno"
-                            "footer_dos footer_dos footer_dos" 
-                            "footer_tres footer_tres footer_tres";
-        
-            grid-template-rows: 1.5rem;
-            height: 100%;   
-        }
-    }
-
-    @media screen and (max-width: 1024px) {
-
-        .grid__conteiner {
-            gap: 20px;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas: "titulo titulo titulo"
-                                "uno uno uno"                              
-                                "uno uno uno" 
-                                "dos dos dos" 
-                                "tres tres tres"
-                                "cuatro cuatro cuatro"
-                                "cuatro cuatro cuatro"
-                                "cinco cinco cinco"
-                                "cinco cinco cinco" ;
-            padding: 2rem 1rem 2rem 1rem;
-            grid-template-columns:  1fr;
-        }
-
-
-        .bloque{
-        
-            p{
-                font-size: 1.5rem;
-                font-weight: 300;
-            }
-        }
-    } */
-  /* ------MEDIA QUERIES----- */
-  /* @media (min-width: 541x) and (max-width: 720px) {
-
-
-
-    .grid__conteiner {
-    gap: 20px;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "titulo titulo "
-                        "titulo titulo"
-                        "uno uno"                              
-                        "uno uno" 
-                        "dos dos" 
-                        "tres tres"
-                        "cuatro cuatro"
-                        "cuatro cuatro"
-                        "cinco cinco"
-                        "cinco cinco" ;
-    padding: 2rem 1rem 2rem 1rem;
-    }
-    grid-template-columns:  4fr;
-
-    .blog__titulo{
-        font-size: 25rem;
-    }
-    
-    .bloque{
-    
-     p{
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    }
-
-
-    footer {
-        display: grid;
-        grid-template-areas: "footer_uno footer_uno footer_uno"
-                        "footer_dos footer_dos footer_dos" 
-                        "footer_tres footer_tres footer_tres";
-    
-        grid-template-rows: 1.5rem;
-        height: 100%;   
-    }
-} */ }
+  font-family: "Roboto", sans-serif; }
   body .nav__animacion:hover {
     transition-duration: 0.4s;
     transform: scale(1.2); }
@@ -262,60 +71,71 @@ body {
     color: white; }
   body a:visited {
     color: red; }
-  body .card__background--presentacion {
-    background-color: rgba(11, 156, 67, 0.705); }
-  body .card-deck {
-    margin: 0 auto;
-    width: 30rem; }
-  body .serv__parrafo {
-    font-size: 1.5rem; }
-  body .button__style {
-    cursor: pointer;
-    width: 100px;
-    padding: 5px;
-    border-radius: 5px;
-    border: none; }
-    body .button__style:hover {
-      background-color: #0ce20c;
-      color: white; }
-  body .img {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    border-radius: 5px;
-    box-shadow: 19px 19px 39px -13px rgba(0, 0, 0, 0.75); }
-    body .img__EIA {
-      background-image: url(../recursos/EIA.jpg); }
-    body .img__MedSon {
-      background-image: url(../recursos/MedSon.jpg); }
-    body .img__GesRes {
-      background-image: url(../recursos/GesRes.jpg); }
-    body .img__GesEfluLiq {
-      background-image: url(../recursos/GesEfluLiq.jpg); }
-    body .img__GesEfluGas {
-      background-image: url(../recursos/GesEfluGas.jpg); }
-    body .img__GesAmb {
-      background-image: url(../recursos/GesAmb.jpg); }
-  body .style__box {
-    height: inherit; }
-  body .animacion__servicios {
-    transition-duration: 0.3s;
-    transition-property: transform; }
-    body .animacion__servicios:hover {
-      transform: scale(1.05); }
-  body .grid__conteiner {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos" "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco";
-    padding: 2rem 1rem 2rem 1rem; }
-  body .blog__titulo {
+
+/* ---------------------QUIENES SOMOS--------------------------*/
+.card__background--presentacion {
+  background-color: rgba(11, 156, 67, 0.705); }
+
+.card-deck {
+  margin: 0 auto;
+  width: 30rem; }
+
+/* ----------------------SERVICIOS----------------------------*/
+.serv__parrafo {
+  font-size: 1.5rem; }
+
+.button__style {
+  cursor: pointer;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none; }
+  .button__style:hover {
+    background-color: #0ce20c;
+    color: white; }
+
+.img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 19px 19px 39px -13px rgba(0, 0, 0, 0.75); }
+  .img__EIA {
+    background-image: url(../recursos/EIA.jpg); }
+  .img__MedSon {
+    background-image: url(../recursos/MedSon.jpg); }
+  .img__GesRes {
+    background-image: url(../recursos/GesRes.jpg); }
+  .img__GesEfluLiq {
+    background-image: url(../recursos/GesEfluLiq.jpg); }
+  .img__GesEfluGas {
+    background-image: url(../recursos/GesEfluGas.jpg); }
+  .img__GesAmb {
+    background-image: url(../recursos/GesAmb.jpg); }
+
+.style__box {
+  height: inherit; }
+
+.animacion__servicios {
+  transition-duration: 0.3s;
+  transition-property: transform; }
+  .animacion__servicios:hover {
+    transform: scale(1.05); }
+
+/*----------------------BLOG----------------------------- */
+.grid__conteiner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+  grid-template-areas: "titulo titulo titulo titulo" "uno uno dos dos" "uno uno tres tres" "cuatro cuatro cinco cinco" "cuatro cuatro cinco cinco";
+  padding: 2rem 1rem 2rem 1rem; }
+  .grid__conteiner .blog__titulo {
     grid-area: titulo;
     text-align: center;
     color: white; }
-  body .bloque {
+  .grid__conteiner .bloque {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -324,60 +144,75 @@ body {
     background-attachment: local;
     padding-bottom: 5px;
     margin: 10px 10px 10px 10px; }
-    body .bloque p {
+    .grid__conteiner .bloque p {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-style: italic;
       font-size: 1.5rem;
       color: white;
       font-weight: 200;
       text-align: center; }
-    body .bloque__uno {
+    .grid__conteiner .bloque__uno {
       grid-area: uno;
       background-image: url(../recursos/elemento-ecologico-fondo-conservacion-medio-ambiente_24877-55298.jpg); }
-    body .bloque__dos {
+    .grid__conteiner .bloque__dos {
       grid-area: dos;
       background-image: url(../recursos/cultivo-de-algas.png); }
-    body .bloque__tres {
+    .grid__conteiner .bloque__tres {
       grid-area: tres;
       background-image: url(../recursos/compostaje668x200x80.jpg); }
-    body .bloque__cuatro {
+    .grid__conteiner .bloque__cuatro {
       grid-area: cuatro;
       background-image: url(../recursos/Granos.jpg); }
-    body .bloque__cinco {
+    .grid__conteiner .bloque__cinco {
       grid-area: cinco;
       background-image: url(../recursos/Guana.jpg); }
-  body a p {
+  .grid__conteiner a p {
     background-color: rgba(66, 41, 11, 0.685); }
-  body .grid__conteiner a {
+  .grid__conteiner a {
     text-decoration: none; }
-  body .card__background {
-    background-color: rgba(188, 231, 245, 0.582); }
-  body .container {
-    margin-top: 8rem;
-    margin-bottom: 8rem; }
-  @media screen and (min-width: 320px) and (max-width: 540px) {
-    body .grid__conteiner {
-      gap: 20px;
-      grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
-      grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco";
-      grid-template-columns: 2fr;
-      padding: 2rem 1rem 2rem 1rem; }
-    body .bloque p {
-      font-size: 0.5rem;
-      font-weight: 500; }
-    body .blog__titulo h1 {
-      font-size: 2.5rem; }
-    body footer {
-      display: grid;
-      grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
-      height: 100%; } }
-  @media screen and (max-width: 1024px) {
-    body .grid__conteiner {
-      gap: 20px;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas: "titulo titulo titulo" "uno uno uno"                               "uno uno uno"  "dos dos dos"  "tres tres tres" "cuatro cuatro cuatro" "cuatro cuatro cuatro" "cinco cinco cinco" "cinco cinco cinco";
-      padding: 2rem 1rem 2rem 1rem;
-      grid-template-columns: 1fr 1fr; }
-    body .bloque p {
-      font-size: 1.5rem;
-      font-weight: 300; } }
+
+/*----------------------CONTACTO--------------------------*/
+.card__background {
+  background-color: rgba(188, 231, 245, 0.582); }
+
+.container {
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
+
+/* ------MEDIA QUERIES----- */
+@media (min-width: 320px) and (max-width: 540px) {
+  .grid__conteiner {
+    gap: 20px;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "titulo titulo " "titulo titulo" "uno uno"                              "uno uno" "dos dos" "tres tres" "cuatro cuatro" "cinco cinco" "cinco cinco";
+    grid-template-columns: 2fr;
+    padding: 2rem 1rem 2rem 1rem; }
+  .card-deck {
+    margin: 0 auto;
+    width: 20rem; }
+  .bloque p {
+    font-size: 0.5rem;
+    font-weight: 500; }
+  .blog__titulo h1 {
+    font-size: 2.5rem; }
+  footer {
+    display: grid;
+    grid-template-areas: "footer_uno footer_uno footer_uno" "footer_dos footer_dos footer_dos"  "footer_tres footer_tres footer_tres";
+    height: 100%; } }
+
+@media screen and (max-width: 1024px) {
+  .grid__conteiner {
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "titulo titulo titulo" "uno uno uno"                               "uno uno uno"  "dos dos dos"  "tres tres tres" "cuatro cuatro cuatro" "cuatro cuatro cuatro" "cinco cinco cinco" "cinco cinco cinco";
+    padding: 2rem 1rem 2rem 1rem;
+    grid-template-columns: 1fr 1fr; }
+  .bloque p {
+    font-size: 1.5rem;
+    font-weight: 300; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  box-sizing: border-box; }
